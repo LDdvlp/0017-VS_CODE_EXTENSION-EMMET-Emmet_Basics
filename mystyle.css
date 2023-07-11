@@ -1,0 +1,83 @@
+/*   My CSS Style   */
+body {
+    color: #333;
+    background-color: #eee;
+    font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+       font-weight: 100;
+}
+
+h1 {    
+    font-size: 50px;
+    line-height: 67px;
+}
+h2 {    
+    font-size: 28px;
+    line-height: 37px;
+    padding-left: 5px;
+}
+h3 {    
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-left: 5px;
+    border-left: 1px dotted #333;
+
+}
+h4 {    
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.emmet_abbr {
+    color : crimson;
+    background-color: #fff;
+    font-family: monospace;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.output_code {
+    background-color: #fff;
+    font-family: monospace;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.key {
+    color : #fff;
+    background-color: #333;
+    font-family: monospace;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.emmetExpansion {
+    color: RoyalBlue;
+}
+
+.linkSource {
+    color: Teal;
+    font-size: 12px;
+    line-height: 16px;
+    font-style: italic;
+}
+
+a {
+    font-weight: 700;	
+}
+

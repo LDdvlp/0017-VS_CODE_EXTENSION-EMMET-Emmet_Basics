@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="mystyle.css">
+
+	<title>Emmet Tips</title>
+	
+</head>
+
+<body>
+
+	<h1>Emmet Tips</h1>
+
+	<h2>1. Configuration</h2>
+
+	<h3>1.1 Site web</h3>
+
+	<p class="linkSource">Site :
+		<a href="https://emmet.io" target="_blank">
+			Emmet
+		</a>
+	</p>
+	
+	<h3>1.2 Activer la tabulation de Emmet dans VS Code pour générer l'expansion liée à l'abbréviation</h3>
+	
+	<p> If you want to use the Tab key for expanding 
+		the Emmet abbreviations, add the following 
+		setting :<br/>
+		<pre><code class="emmet_code">"emmet.triggerExpansionOnTab": true</code></pre>
+		This setting allows using the Tab key for 
+		indentation when text is not an Emmet abbreviation.
+	</p>
+
+	<p class="linkSource">Source :
+		<a
+			href="https://code.visualstudio.com/docs/editor/emmet#_using-tab-for-emmet-expansions"
+			target="_blank">
+			Using Tab for Emmet expansions
+		</a>
+	</p>
+
+	<h2>2. Abbréviations</h2>
+
+	<h3>2.1 Lorem</h3>
+
+	<h4>2.1.1 Lorem (1 paragraphe)</h4>
+
+	<p>L'abbréviation Emmet :</p>
+
+	<pre><code class="emmet_abbr">lorem</code> + <span class="key">TAB</span> ou <span class="key">ENTRÉE</span>
+	</pre>
+
+	<p>génére le texte :</p>
+
+	<p class="emmetExpansion output_code"> 
+	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem obcaecati aliquam vel aperiam natus placeat, molestiae expedita laudantium iusto, corrupti, fuga deserunt! Deleniti possimus eveniet distinctio ut rerum ex officiis.
+	</p>
+
+	<h4>2.1.2 Lorem10 (10 mots)</h4>
+
+	<p>L'abbréviation Emmet :</p>
+
+	<pre><code class="emmet_abbr">lorem10</code> + <span class="key">TAB</span> ou <span class="key">ENTRÉE</span>
+	</pre>
+
+	<p>génére le texte :</p>
+
+	<p class="emmetExpansion output_code">
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, quam.
+	</p>
+
+	<h4>2.1.3 Lorem100 (100 mots)</h4>
+
+	<p>L'abbréviation Emmet :</p>
+
+	<pre><code class="emmet_abbr">lorem100</code> + <span class="key">TAB</span> ou <span class="key">ENTRÉE</span>
+	</pre>
+
+	<p>génére le texte :</p>
+
+	<p class="emmetExpansion output_code">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta atque accusamus quas repellat totam beatae laboriosam numquam qui est, quae vel repellendus eveniet commodi, tempore rem, placeat maiores quasi nobis ex. Animi culpa numquam similique amet nihil rerum suscipit laboriosam ipsum possimus soluta ad rem omnis quam cum accusantium eligendi distinctio inventore temporibus pariatur non, porro dicta placeat! Impedit voluptate necessitatibus quae ipsum possimus dignissimos laborum vitae provident nobis adipisci asperiores quibusdam iste deserunt natus, facere repudiandae officiis illo beatae expedita cumque? Corporis molestiae assumenda itaque officia dolores, eaque inventore iste temporibus sit provident aspernatur repellendus. Ipsum porro sint similique.
+	</p>
+
+	<h3>2.2 Créer n paragraphes <em>lorem</em></h3>
+
+	<p>Le code Emmet :</p>
+
+	<pre><code class="emmet_abbr">p*4>lorem</code> + <span class="key">TAB</span> ou <span class="key">ENTRÉE</span>
+	</pre>
+
+	<p>génére le code HTML :</p>
+
+	<pre class="output_code"><code class="emmetExpansion">
+	&lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod iure illo eius labore distinctio eveniet unde culpa 
+	rerum adipisci aliquam voluptatibus, nisi praesentium necessitatibus ex perspiciatis in magnam dignissimos. Commodi?&lt;/p&gt;
+	&lt;p&gt;Doloremque molestiae aut beatae dolor delectus fugiat accusamus illo dignissimos exercitationem debitis blanditiis quod eligendi,
+	praesentium aliquam est fugit dolore et? Obcaecati porro corrupti architecto iste mollitia, nulla quibusdam doloremque?&lt;/p&gt;
+	&lt;p&gt;Esse est reprehenderit obcaecati fuga ratione quae odio sit natus, sequi praesentium nemo eaque perspiciatis 
+	at doloremque quaerat, dolor saepe nobis soluta? Repellat ipsam laudantium tenetur voluptatibus est? Earum, error!&lt;/p&gt;
+	&lt;p&gt;Non tenetur nemo quasi sed deleniti iusto voluptas debitis ut sequi dignissimos. Iusto, consectetur! Voluptatum, 
+	consequuntur necessitatibus aspernatur quidem sint quod magnam nisi, atque obcaecati eveniet esse, ullam praesentium corrupti.&lt;/p&gt;
+	</code></pre>
+
+	<h3>2.3 Créer une div et une liste dans une div</em></h3>
+
+	<p>Le code Emmet :</p>
+
+	<pre><code class="emmet_abbr">#page>div.logo+ul#navigation>li*5>a{Item $}</code> + <span class="key">TAB</span>
+	</pre>
+
+	<p>génére le code HTML :</p>
+
+	<pre class="output_code"><code class="emmetExpansion">
+
+	&lt;div id="page"&gt;
+		&lt;div class="logo"&gt;&lt;/div&gt;
+		&lt;ul id="navigation"&gt;
+			&lt;li&gt;&lt;a href=""&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=""&gt;Item 5&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+
+	</code></pre>
+
+</body>
+</html>
+
