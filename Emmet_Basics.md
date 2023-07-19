@@ -68,12 +68,12 @@ Le code Emmet `p*4>lorem` + <kbd>TAB</kbd> ou <kbd>ENTRÉE</kbd> génére le cod
 Le code Emmet `ul#nav>li.item$*4>a{Item $}	` + <kbd>TAB</kbd> ou <kbd>ENTRÉE</kbd> génére le code HTML :
 
 ```html
-		<ul id="nav">
-			<li class="item1"><a href="">Item 1</a></li>
-			<li class="item2"><a href="">Item 2</a></li>
-			<li class="item3"><a href="">Item 3</a></li>
-			<li class="item4"><a href="">Item 4</a></li>
-		</ul>
+<ul id="nav">
+	<li class="item1"><a href="">Item 1</a></li>
+	<li class="item2"><a href="">Item 2</a></li>
+	<li class="item3"><a href="">Item 3</a></li>
+	<li class="item4"><a href="">Item 4</a></li>
+</ul>
 ```
 
 ### 2.4 Créer une page avec logo et navigation
