@@ -1,6 +1,6 @@
 |*Doc. #*|*Rédacteur*|*Création*|*Mise à jour*|
 |:---:|:---:|---:|:---|
-|***0017***|*Loïc Drouet*|_Vendredi 07 juillet 2023_|_Vendredi 07 juillet 2023_|
+|***0017***|*Loïc Drouet*|_Vendredi 07 juillet 2023_|_Mercredi 19 juillet 2023_|
 
 
 <body>
@@ -63,7 +63,20 @@ Le code Emmet `p*4>lorem` + <kbd>TAB</kbd> ou <kbd>ENTRÉE</kbd> génére le cod
 <p>Non tenetur nemo quasi sed deleniti iusto voluptas debitis ut sequi dignissimos. Iusto, consectetur! Voluptatum, consequuntur necessitatibus aspernatur quidem sint quod magnam nisi, atque obcaecati eveniet esse, ullam praesentium corrupti.</p>
 ```
 
-### 2.3 Créer une div et une liste dans une div
+### 2.3 Créer une navigation
+
+Le code Emmet `ul#nav>li.item$*4>a{Item $}	` + <kbd>TAB</kbd> ou <kbd>ENTRÉE</kbd> génére le code HTML :
+
+```html
+		<ul id="nav">
+			<li class="item1"><a href="">Item 1</a></li>
+			<li class="item2"><a href="">Item 2</a></li>
+			<li class="item3"><a href="">Item 3</a></li>
+			<li class="item4"><a href="">Item 4</a></li>
+		</ul>
+```
+
+### 2.4 Créer une page avec logo et navigation
 
 Le code Emmet `#page>div.logo+ul#navigation>li*5>a{Item $}` + <kbd>TAB</kbd> ou <kbd>ENTRÉE</kbd> génére le code HTML :
 
@@ -78,30 +91,4 @@ Le code Emmet `#page>div.logo+ul#navigation>li*5>a{Item $}` + <kbd>TAB</kbd> ou 
 		<li><a href="">Item 5</a></li>
 	</ul>
 </div>
-
-
-	<p>Le code Emmet :</p>
-
-	<pre><code class="emmet_abbr">#page>div.logo+ul#navigation>li*5>a{Item $}</code> + <span class="key">TAB</span>
-	</pre>
-
-	<p>génére le code HTML :</p>
-
-	<pre class="output_code"><code class="emmetExpansion">
-
-	&lt;div id="page"&gt;
-		&lt;div class="logo"&gt;&lt;/div&gt;
-		&lt;ul id="navigation"&gt;
-			&lt;li&gt;&lt;a href=""&gt;Item 1&lt;/a&gt;&lt;/li&gt;
-			&lt;li&gt;&lt;a href=""&gt;Item 2&lt;/a&gt;&lt;/li&gt;
-			&lt;li&gt;&lt;a href=""&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-			&lt;li&gt;&lt;a href=""&gt;Item 4&lt;/a&gt;&lt;/li&gt;
-			&lt;li&gt;&lt;a href=""&gt;Item 5&lt;/a&gt;&lt;/li&gt;
-		&lt;/ul&gt;
-	&lt;/div&gt;
-
-	</code></pre>
-
-</body>
-</html>
-
+```
